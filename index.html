@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+ <!-- <link rel="stylesheet" href="./style.css" />-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>ZAMAN</title>
+
+</head>
+<body class="d-flex h-100 text-center text-bg-dark  mt-5">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column mt-5">
+
+  <main class="px-3 text-success">
+    <h1 class="display-3 r"><i>KODLUYORUZ</i></h1>
+    <p class="lead display-4" onload="showTime()">Merhaba, <span class="text-primary" name="isim" id="isim" value=""></span>   !Hoşgeldin!</p>
+    <p class="lead display-4">
+    <p class="display-4 text-primary" name="zaman" id="zaman"> </p>
+    <i class="display-4">tarihinde Javascript bölümündesiniz.</i>
+    <img class="w-50" src="https://www.dijitalhabitat.com/wp-content/uploads/2019/09/kodlama-1.gif">
+  </main>
+
+
+</div>
+
+<link rel="stylesheet" type="text/css" href="chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/css/blur.css" class="loom-blur-styles"></body>
+	  <script >
+	  
+var isim =prompt("Lütfen adınızı giriniz:")
+
+
+
+if( (isim != "") && (isim != null) ) 
+   
+    document.getElementById("isim").innerHTML = isim;
+    
+   else if(isim == "") 
+   
+   alert("Boş giriş yaptınız!");
+
+
+
+	var now = new Date();
+	   document.getElementById("zaman").innerHTML = now;
+
+
+
+
+	  </script>
+</body>
+</html>
